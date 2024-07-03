@@ -84,6 +84,7 @@ function init() {
         try {
             const page = createLogo(response);
             writeToFile(fileName, page);
+            console.log("Generated logo.svg");
         } catch (error) {
             console.error('Error creating logo:', error);
         }
